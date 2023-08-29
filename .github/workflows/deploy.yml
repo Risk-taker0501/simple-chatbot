@@ -23,9 +23,9 @@ jobs:
       - name: install dependencies
         run: npm ci
       - name: build app
-        run: npm run build && npm run gh-pages:404
+        run: npm run build
         env:
-          PUBLIC_URL: /demo-routing-in-typescript-react-app
+          PUBLIC_URL: /simple-chatbot
       - name: upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
